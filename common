@@ -2,3 +2,14 @@
 
 安装 yum-utils
 安装 docker
+安装 mysql
+
+使用rpm安装jdk
+rpm -ivh jdk.rpm
+配置环境变量：
+  #java
+  export JAVA_HOME=/usr/java/default
+  export PATH=$JAVA_HOME/bin:$PATH
+  export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tool.jar
+  
+安装mycat
