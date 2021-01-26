@@ -24,3 +24,5 @@ rpm -ivh jdk.rpm
   export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tool.jar
   
 安装mycat
+
+
