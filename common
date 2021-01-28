@@ -12,6 +12,7 @@
     使用命令rpm -e --nodeps {-file-name}进行移除操作 
     按照依赖关系依次安装rpm包 依赖关系依次为common→libs→client→server  
       rpm -ivh file.rpm
+      如有报错，尝试 rpm -ivh file.rpm
     server依赖libaio ： rpm -qa|grep libaio 
     修改密码：
       set global validate_password_policy=0;
