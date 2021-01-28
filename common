@@ -29,4 +29,4 @@ rpm -ivh jdk.rpm
       set password for root@localhost=password('12345678');
 安装mycat
 
-
+终端新发现：FinalShell
