@@ -27,6 +27,7 @@ rpm -ivh jdk.rpm
   修改密码：
       set global validate_password_policy=0;
       set password for root@localhost=password('12345678');
+      flush privileges;
 安装mycat
 
 终端新发现：FinalShell
