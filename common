@@ -14,9 +14,7 @@
       rpm -ivh file.rpm
       如有报错，尝试 rpm -ivh file.rpm
     server依赖libaio ： rpm -qa|grep libaio 
-    修改密码：
-      set global validate_password_policy=0;
-      set password for root@localhost=password('12345678');
+    
 使用rpm安装jdk
 rpm -ivh jdk.rpm
 配置环境变量：
@@ -25,6 +23,10 @@ rpm -ivh jdk.rpm
   export PATH=$JAVA_HOME/bin:$PATH
   export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tool.jar
   
+  启动后查看随机生成的密码：cat /var/log/mysqld.log |grep password
+  修改密码：
+      set global validate_password_policy=0;
+      set password for root@localhost=password('12345678');
 安装mycat
 
 
