@@ -4,7 +4,7 @@
 
 ​		在之前的操作中，我们已经实现了mysql机器的高可用，可以动态切换master，那么如果mycat崩溃了呢？我们应该如何处理呢？所以此时就需要搭建mycat的高可用集群了。
 
-​		在mycat的权威指南中，介绍了多种高可用的方案，在这里我们讲解一种使用最多的方案，使用HAProxy+Keepalived配合使用来实现myact的高可用。
+​		在mycat的权威指南中，介绍了多种高可用的方案，在这里我们讲解一种使用最多的方案，使用HAProxy+Keepalived配合使用来实现mycat的高可用。
 
 ​		HAproxy实现了mycat多借点的集群高可用和负载均衡，而HAProxy自身的高可用则可以通过Keepalived来实现。
 
