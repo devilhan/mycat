@@ -29,7 +29,7 @@
 3、进入到解压后的目录，查看内核版本，进行编译
 	cd cd /usr/local/haproxy-1.8.25/
 	uname -r
-	make TARGET=linux26
+	make TARGET=linux26  （centos6 使用26 centos7使用31）
 4、编译完成之后，开始进行安装
 	make install PREFIX=/usr/local/haproxy
 5、安装完成之后，创建目录，创建HAProxy配置文件
